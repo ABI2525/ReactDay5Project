@@ -1,25 +1,15 @@
-import logo from './logo.svg';
 import './App.css';
+import  Day5 from './Day_5';
+import Errorboundary from './Errorboundary';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Errorboundary>
+        <Day5 a={["chocalate","icecream","fruits","Cookies"]}/>
+      </Errorboundary>
     </div>
   );
 }
 
-export default App;
+export default App;
